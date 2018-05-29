@@ -18,7 +18,7 @@ On Raspberry Pi 3 also add following lines:
 </p>
 
 <h2>Build own image</h2>
-<p><code>sudo docker build https://github.com/tiroso/docker.git#master:HM-MOD-RPI-PCB --tag tiroso/hm-mod-rpi-pcb</code></p>
+<p><code>sudo docker build https://github.com/tiroso/docker_hm-mod-rpi-pcb.git#master --tag tiroso/hm-mod-rpi-pcb</code></p>
 
 <h2>Pull</h2>
 <p><code>sudo docker pull tiroso/hm-mod-rpi-pcb</code></p>
@@ -28,3 +28,5 @@ On Raspberry Pi 3 also add following lines:
 
 <h2>Run normal (socat)</h2>
 <p><code>docker run -d --restart always --name hmlan --device=/dev/ttyAMA0 --device /dev/gpiomem --publish "2000:2000" tiroso/hm-mod-rpi-pcb</code></p>
+
+<p><b>Don't run multiple hm-mod-rpi-pcb container at the same time.</b></p>
